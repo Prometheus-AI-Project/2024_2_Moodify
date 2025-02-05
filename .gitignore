@@ -4,10 +4,12 @@ model/.env
 # Python cache files
 model/__pycache__/
 model/**/__pycache__/
+*.pyc
 
 # Upload directory
 model/uploads/
 model/**/uploads/
+!model/uploads/.gitkeep
 
 # Cache files
 model/.cache/
@@ -20,6 +22,7 @@ model/**/.deployment/
 # Model files
 model/models/
 model/**/models/
+!model/models/.gitkeep
 
 # Netlify
 .netlify/
@@ -33,5 +36,11 @@ build/
 # Dependencies
 node_modules/
 
-# venv
+# Virtual Environment
 venv/
+ENV/
+env/
+.env/
+
+# Keep model directory structure
+!model/
