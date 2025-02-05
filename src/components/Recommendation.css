@@ -1,0 +1,587 @@
+.recommendation-child {
+  width: 375px;
+  height: 198px;
+  position: relative;
+  box-shadow: var(--drop);
+  background-color: var(--main-white);
+  display: none;
+  max-width: 100%;
+}
+.ai,
+.icon2 {
+  position: relative;
+}
+.icon2 {
+  height: 24.5px;
+  width: 22px;
+  object-fit: cover;
+}
+.ai {
+  align-self: stretch;
+  letter-spacing: -0.33px;
+  line-height: 21px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.ai-wrapper,
+.button1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ai-wrapper {
+  width: 116px;
+  flex-direction: column;
+  padding: var(--padding-11xs-8) 0 0;
+  box-sizing: border-box;
+}
+.button1 {
+  align-self: stretch;
+  border-radius: var(--br-3xl);
+  border: 1px solid var(--color-gray-200);
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-smi);
+  gap: var(--gap-5xs);
+  z-index: 2;
+
+}
+
+.button1:hover {
+  /* hover 시 약간 커지고 그림자도 커짐 */
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: lightgrey;
+}
+
+.icon3 {
+  width: 9px;
+  height: 12.4px;
+  position: relative;
+}
+.music-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs-3) 0 0;
+}
+.bruno-mars- {
+  position: relative;
+  letter-spacing: -0.33px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.div21 {
+  width: 99px;
+  position: relative;
+  letter-spacing: -0.33px;
+  line-height: 21px;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.music1 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-sm) var(--padding-7xs)
+    var(--padding-mini);
+  gap: var(--gap-10xs);
+  z-index: 1;
+  height: 100%;
+}
+.music1:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: lightgrey;
+}
+
+.music-examples,
+.music2,
+.recommendation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.music-examples {
+  align-self: stretch;
+  display: flex;
+  overflow-x: auto; /* 가로 스크롤 추가 */
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+  gap: var(--gap-5xs);
+  padding: 10px;
+  -webkit-overflow-scrolling: touch; /* iOS 스크롤 부드럽게 */
+  scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
+}
+.music-examples::-webkit-scrollbar {
+  display: none;
+}
+.recommendation {
+  width: 380px; /* px 단위 추가 */
+  flex: 1;
+  background-color: var(--main-white);
+  flex-direction: column;
+  padding: var(--padding-31xl) var(--padding-base) var(--padding-31xl)
+    var(--padding-lg);
+  box-sizing: border-box;
+  gap: var(--gap-sm);
+  max-width: 100%;
+  margin-top: 20px;
+  text-align: left;
+  font-size: var(--body-texts-text-6-size);
+  color: var(--color-gray-200);
+  font-family: var(--font-caramel);
+  margin-right: 200px;
+  margin-left: -190px;
+  box-shadow: none; /* box-shadow 제거 */
+  border: none; /* border 제거 */
+}
+
+.analysis-result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-result h3 {
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 16px;
+}
+
+.analysis-result div {
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.final-emotion {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.music-info {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.song-info {
+  margin-top: 15px;
+}
+
+.song-info h4 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.spotify-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #1DB954;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.spotify-link:hover {
+  background-color: #1ed760;
+}
+
+audio {
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.recommendation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.analysis-result {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.analysis-result h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.final-emotion {
+  font-weight: bold;
+  color: #1DB954;
+  margin-top: 10px;
+}
+
+.music-selection {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.tracks-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tracks-list {
+  display: flex;
+  flex-direction: row; /* 수평 방향으로 변경 */
+  gap: 15px;
+  overflow-x: auto; /* 수평 스크롤만 허용 */
+  overflow-y: hidden; /* 수직 스크롤 비활성화 */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 10px 5px;
+  white-space: nowrap;
+}
+
+.tracks-list::-webkit-scrollbar {
+  display: none;
+}
+
+.track-item {
+  flex: 0 0 auto;
+  width: 200px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e0e0e0;
+  position: relative;  /* 선택 표시를 위한 포지셔닝 */
+}
+
+.track-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.track-item.active {
+  border: 2px solid #1DB954;
+  background-color: #f5f5f5;
+}
+
+.track-item.active::after {
+  content: '✓';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #1DB954;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.track-item:active {
+  background-color: #eeeeee;  /* 클릭 시 배경색 */
+  transform: translateY(0);    /* 클릭 시 애니메이션 효과 */
+}
+
+.track-thumbnail {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.track-info {
+  width: 100%;
+  text-align: center;
+}
+
+.track-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-artist {
+  color: #666;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .track-item {
+    width: 160px;
+    min-width: 160px;
+  }
+  
+  .track-thumbnail {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.recommendation-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.ai-recommendation-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+}
+
+.recommendation-button {
+  width: 100%;
+}
+
+.button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button1:hover {
+  background: #e8e8e8;
+}
+
+.analysis-result {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.emotion-results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.final-emotion {
+  font-weight: bold;
+  color: #1DB954;
+  margin-top: 5px;
+}
+
+.music-selection {
+  margin-top: 10px;
+}
+
+.tracks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid #e0e0e0;
+}
+
+.track-item:hover {
+  background: #f8f9fa;
+}
+
+.track-thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.track-info {
+  flex: 1;
+}
+
+.track-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.track-artist {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.icon2 {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.ai {
+  font-size: 14px;
+  color: #333;
+}
+
+.track-album-cover {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.track-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.track-info {
+  flex-grow: 1;
+}
+
+.track-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.track-artist {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.track-selection {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.track-item {
+  position: relative;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.track-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.track-album-cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.track-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.track-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-artist {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 활성화 상태 스타일 */
+.track-item.active {
+  border-color: #1DB954;
+  background-color: #f8fff9;
+}
+
+.track-item.active::after {
+  content: '✓';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #1DB954;
+  font-size: 16px;
+  font-weight: 700;
+  background: rgba(255,255,255,0.9);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

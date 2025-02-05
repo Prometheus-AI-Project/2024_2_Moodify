@@ -1,0 +1,37 @@
+# Environment variables
+model/.env
+
+# Python cache files
+model/__pycache__/
+model/**/__pycache__/
+
+# Upload directory
+model/uploads/
+model/**/uploads/
+
+# Cache files
+model/.cache/
+model/**/.cache/
+
+# Deployment files
+model/.deployment/
+model/**/.deployment/
+
+# Model files
+model/models/
+model/**/models/
+
+# Netlify
+.netlify/
+
+# VS Code
+.vscode/
+
+# Build directory
+build/
+
+# Dependencies
+node_modules/
+
+# venv
+venv/
