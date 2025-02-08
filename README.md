@@ -3,19 +3,19 @@
 
 ## (0) 실행 방법
 - 백엔드
-  '''
-  python -m venv venv
-  ./venv\Scripts\activate (window ver.)
-  pip install -r requirements.txt
-  cd model
-  py app.py
-  '''
+  ```
+  python -m venv venv  
+  ./venv\Scripts\activate (window ver.)  
+  pip install -r requirements.txt  
+  cd model  
+  py app.py  
+  ```
   
 - 프론트엔드
-  '''
-  npm install
-  npm start
-  '''
+  ```
+  npm install  
+  npm start  
+  ```
 
 ## (1) 프로젝트 소개
 ### 팀원 
