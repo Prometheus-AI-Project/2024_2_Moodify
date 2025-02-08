@@ -1,5 +1,22 @@
 ## 프로젝트 제목
 **Moodify : SNS 맞춤형 멀티모달  BGM 추천 프로젝트**
+
+## (0) 실행 방법
+- 백엔드
+  '''
+  python -m venv venv
+  ./venv\Scripts\activate (window ver.)
+  pip install -r requirements.txt
+  cd model
+  py app.py
+  '''
+  
+- 프론트엔드
+  '''
+  npm install
+  npm start
+  '''
+
 ## (1) 프로젝트 소개
 ### 팀원 
 **<인공지능 연합동아리 프로메테우스 15팀>**   
