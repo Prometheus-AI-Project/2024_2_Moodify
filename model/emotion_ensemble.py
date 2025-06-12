@@ -18,9 +18,9 @@ class EmotionEnsemble:
         입력된 모달리티에 따라 가중치를 조정합니다.
         """
         if 'text' in modalities and 'image' in modalities and 'video' in modalities:
-            self.weights = {'text': 0.5, 'image': 0.3, 'video': 0.2}
+            self.weights = {'text': 0.4, 'image': 0.3, 'video': 0.3}
         elif 'text' in modalities and ('image' in modalities or 'video' in modalities):
-            self.weights = {'text': 0.7, 'image': 0.2, 'video': 0.1}
+            self.weights = {'text': 0.6, 'image': 0.4, 'video': 0.4}
         elif 'image' in modalities and 'video' in modalities:
             self.weights = {'image': 0.5, 'video': 0.5}
         else:
