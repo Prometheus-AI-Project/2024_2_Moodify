@@ -6,9 +6,9 @@ class EmotionEnsemble:
         
         # 각 모달리티의 기본 가중치 초기화
         self.weights = {
-            'text': 0.5,
+            'text': 0.4,
             'image': 0.3,
-            'video': 0.2
+            'video': 0.3
         }
         # 동점 처리 우선순위 (텍스트 > 오디오 > 비디오)
         self.priority = {'text': 0, 'image': 1, 'video': 2}
